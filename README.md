@@ -46,3 +46,17 @@ This new folder will contain all the Python scripts and associated files, such a
 11.	README.md
 
 12.	LICENSE (optional)
+
+## Explanation
+
+- Real-Time Graph: The game features a graph that starts rising (or 'crashing') from 1x in real time as soon as the round begins.
+- Increasing Multiplier: As the graph rises, the associated payout multiplier also increases.
+- Bet and Cash Out: Before the start of each round, players place their bets. Once the round begins and the graph is rising, players must decide at which point to serve. If they cash out before the graph "crashes" (or stops), they earn a payout based on the multiplier they cashed out at.
+
+## Strategy
+
+- The script identifies a sequence of 4 results with result <=1.99
+- After identifying this pattern, he starts the bet with the auto-cashout set at 2.00x
+- In case of loss, it will double the amount bet on the next round up to a maximum of 7 times, thus totaling 8 maximum bets
+- If by the eighth bet the result has not yet been >=2.00, the script considers stop loss and returns to looking for the pattern again
+This strategy, based on this data, generates guaranteed profit in the long term
