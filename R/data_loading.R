@@ -14,7 +14,7 @@ check_missing_values <- function(data) {
 }
 
 # Read the data from the CSV file
-raw_data <- read_csv("data/result1.csv")
+raw_data <- read.csv("data/result1.csv")
 
 # Examine the data types and structure of raw_data
 str(raw_data)
