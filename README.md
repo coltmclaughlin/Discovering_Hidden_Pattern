@@ -55,7 +55,7 @@ This new folder will contain all the Python scripts and associated files, such a
 
 ## Strategy
 
-- The script identifies a sequence of 4 results with result <=1.99
+- The script identifies a sequence of 4 results with result <=1.99 after initial result >=2
 - After identifying this pattern, he starts the bet with the auto-cashout set at 2.00x
 - In case of loss, it will double the amount bet on the next round up to a maximum of 7 times, thus totaling 8 maximum bets
 - If by the eighth bet the result has not yet been >=2.00, the script considers stop loss and returns to looking for the pattern again
