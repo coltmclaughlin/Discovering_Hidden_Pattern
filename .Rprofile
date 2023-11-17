@@ -1,0 +1,7 @@
+options(auto_cashout = 2)
+options(auto_cashout_range = seq(1.1, 3.5, by = 0.1))
+options(identify_num = 4)
+options(identify_num_range = seq(1, 8, by = 1))
+options(bet_limit = 8)
+options(bet_limit_range = seq(1, 10, by = 1))
+options(initial_bet_amount = 1)
