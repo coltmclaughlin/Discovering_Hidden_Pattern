@@ -30,14 +30,3 @@ for (result in c(processed_data$result, 0)) {
 
 # Remove zero values from the preallocated vector
 max_values <- max_values[1:(current_index - 1)]
-
-potential_patterns <- numeric()
-for (i in 2:(length(max_values) - 3)) {
-  if (max_values[i - 1] >= 2 && sum(max_values[i:(i + 3)] <= 1.99) >= 4) {
-    potential_patterns <- c(potential_patterns, i)
-  }
-}
-
-length(max_values) # number of rounds
-length(potential_patterns) # number of bettings
-length(potential_patterns) * 100 / length(max_values) # percent of betting
